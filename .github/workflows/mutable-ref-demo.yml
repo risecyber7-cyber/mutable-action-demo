@@ -1,0 +1,20 @@
+name: Mutable Ref Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run demo action via mutable ref
+        uses: your-username/mutable-action-demo/.github/actions/demo-action@master
+
+      - name: Show completion
+        run: echo "Workflow completed"

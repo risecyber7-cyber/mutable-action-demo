@@ -1,0 +1,9 @@
+name: "Mutable Action Demo"
+description: "Educational demo showing how mutable refs change workflow behavior"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Print demo message
+      run: echo "Version 2 - Updated execution"
+      shell: bash
