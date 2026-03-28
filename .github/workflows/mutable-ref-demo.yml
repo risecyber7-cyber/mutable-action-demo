@@ -1,4 +1,5 @@
 name: Mutable Ref Demo
+# Educational demo: mutable ref validation
 
 on:
   workflow_dispatch:
